@@ -1,10 +1,10 @@
 matplotlib
 # Streamlit for building the web application
-streamlit==1.21.0
+streamlit
 
 # OpenCV for image processing
 opencv-python==4.6.0.66
 
 # NumPy for numerical operations
-numpy==1.21.6
+numpy
 
