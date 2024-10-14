@@ -5,7 +5,15 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import streamlit as st
 
-# إعداد واجهة المستخدم
+# Add custom CSS to hide the footer, header
+hide_st_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
 # إعداد واجهة المستخدم
 st.title("Image Resizer")
 
