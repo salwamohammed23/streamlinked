@@ -2,7 +2,7 @@
 streamlit
 
 # OpenCV for image processing
-opencv-python==4.5.5.64
+opencv-python
 
 # NumPy for numerical operations
 numpy
