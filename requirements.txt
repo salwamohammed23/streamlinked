@@ -3,7 +3,7 @@ streamlit
 
 # OpenCV for image processing
 opencv-python
-
+opencv-contrib-python-headless
 # NumPy for numerical operations
 numpy
 
