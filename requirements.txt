@@ -9,3 +9,4 @@ numpy
 
 # Matplotlib for plotting (if needed)
 matplotlib
+streamlit_webrtc
