@@ -1,11 +1,10 @@
 import cv2
 import streamlit as st
-import numpy as np
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
 # تحميل المصنفات المدربة
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
 # إعداد Streamlit
 st.title("Face and Eye Detection App")
@@ -14,7 +13,6 @@ st.text("OpenCV with Streamlit")
 # تعريف الكلاس لمعالجة الفيديو
 class VideoTransformer(VideoTransformerBase):
     def transform(self, frame):
-        # تحويل الإطار إلى صورة OpenCV
         img = frame.to_ndarray(format="bgr")
 
         # تحويل الصورة إلى درجات الرمادي
