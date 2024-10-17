@@ -32,7 +32,7 @@ def detect_faces_and_eyes(frame):
     return img
 
 # بدء البث من الكاميرا
-webrtc_streamer(key="example", video_frame_callback=detect_faces_and_eyes,    rtc_configuration={
+webrtc_streamer(key="example", video_frame_callback=detect_faces_and_eyes, rtc_configuration={
         "iceServers": [
             {"urls": ["stun:stun.l.google.com:19302"]},
             {"urls": ["stun:stun1.l.google.com:19302"]},
@@ -40,4 +40,6 @@ webrtc_streamer(key="example", video_frame_callback=detect_faces_and_eyes,    rt
             {"urls": ["stun:stun3.l.google.com:19302"]},
             {"urls": ["stun:stun4.l.google.com:19302"]},
             {"urls": ["stun:stun.stunprotocol.org:3478"]},
-            {"urls": ["stun:stun.services.mozilla.com"]}])
+            {"urls": ["stun:stun.services.mozilla.com"]}
+        ]
+    })
