@@ -3,3 +3,4 @@ libgtk2.0-dev
 ffmpeg
 libsm6
 libxrender1
+python3-opencv
